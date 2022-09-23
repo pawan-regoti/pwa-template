@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="PWA Template">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#0d1117">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>PWA Template</title>
+        <link rel="manifest" href="manifest.json">
+        <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+        <style type="text/css">
+            body {
+                background-color: #0d1117;
+            }
+
+            p {
+                color: #c9d1d9;
+                font-size: xx-large;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            }
+        </style>
+        <script type="text/javascript">
+            if ("serviceWorker" in navigator) {
+                window.addEventListener("load", () => {
+                    navigator.serviceWorker && navigator.serviceWorker.register("./pwa-install.js");
+                });
+            }
+        </script>
+    </head>
+
+    <body>
+        <p> Hello World </p>
+    </body>
+
+</html>

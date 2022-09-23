@@ -1,2 +1,2 @@
 # pwa-template
-template for pwd apps
+template for pwa apps
