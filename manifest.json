@@ -6,9 +6,6 @@
     "display": "standalone",
 	"start_url": "./?utm_source=pwa_install",
     "scope": "/",
-    "background": {
-        "service_worker": "service-worker.js"
-    },
     "background_color": "#0d1117",
     "theme_color": "#0d1117",
     "icons":[

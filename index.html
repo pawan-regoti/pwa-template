@@ -23,7 +23,11 @@
             }
         </style>
         <script type="text/javascript">
-            console.log("Hello world")
+            if ("serviceWorker" in navigator) {
+                window.addEventListener("load", () => {
+                    navigator.serviceWorker && navigator.serviceWorker.register("./service-worker.js");
+                });
+            }
         </script>
     </head>
 
